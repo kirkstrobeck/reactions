@@ -1,0 +1,5 @@
+.DS_Store
+/dist/debug.html
+/dist/index.css
+/dist/index.js
+/node_modules

@@ -1,0 +1,41 @@
+@angry: #f35b6b;
+@haha: #ffd972;
+@like: #5890ff;
+@love: #f25268;
+@wow: #ffd972;
+
+.reaction-bar {
+  display: flex;
+  height: 2px;
+  background-color: blue;
+  width: 100%;
+
+  .segment {
+    height: 100%;
+    border-right: solid 2px #e1e2e3;
+
+    &::last-child {
+      border-right: none;
+    }
+
+    &.Angry {
+      background-color: @angry;
+    }
+
+    &.Haha {
+      background-color: @haha;
+    }
+
+    &.Like {
+      background-color: @like;
+    }
+
+    &.Love {
+      background-color: @love;
+    }
+
+    &.Wow {
+      background-color: @wow;
+    }
+  }
+}

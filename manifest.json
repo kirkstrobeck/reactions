@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Reactions",
+  "description": "Shows Facebook reactions more clearly, based on this article http://cl.ly/ffT9",
+  "version": "0.1",
+  "content_scripts": [{
+    "matches": [
+      "https://www.facebook.com/*"
+    ],
+    "css": [
+      "dist/index.css"
+    ],
+    "js": [
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/react/dist/react-with-addons.js",
+      "node_modules/react-dom/dist/react-dom.js",
+      "dist/index.js"
+    ],
+    "run_at": "document_start"
+  }]
+}
